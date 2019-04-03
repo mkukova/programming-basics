@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.face-squared", "02.face-squared\02.face-squared.csproj", "{1E66D034-1836-4DE5-93DF-5585DD0B730E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.face-squared", "02.face-squared\03.face-squared.csproj", "{1E66D034-1836-4DE5-93DF-5585DD0B730E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
