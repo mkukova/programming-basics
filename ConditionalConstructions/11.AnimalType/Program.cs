@@ -7,7 +7,7 @@ namespace _11.AnimalType
         static void Main(string[] args)
         {
             string animal = Console.ReadLine();
-            switch(animal)
+            switch (animal)
             {
                 case "dog": Console.WriteLine("mammal"); break;
                 case "crocodile": Console.WriteLine("reptile"); break;
