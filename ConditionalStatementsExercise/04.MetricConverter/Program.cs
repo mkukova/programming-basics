@@ -6,7 +6,28 @@ namespace _04.MetricConverter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            double value = double.Parse(Console.ReadLine());
+            string inputmetric = Console.ReadLine();
+            string outputmetric = Console.ReadLine();
+            inputmetric = inputmetric.ToLower();
+            outputmetric = outputmetric.ToLower();
+            if (inputmetric == "mm")
+            {
+                value = value / 1000;
+            }
+            else if (inputmetric == "cm")
+            {
+                value = value / 100;
+            }
+            if (outputmetric == "mm")
+            {
+                value = value * 1000;
+            }
+            else if (outputmetric == "cm")
+            {
+                value = value * 100;
+            }
+            Console.WriteLine($"{value:F3}");
         }
     }
 }
