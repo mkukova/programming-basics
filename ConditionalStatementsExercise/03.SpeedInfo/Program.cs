@@ -23,7 +23,7 @@ namespace _03.SpeedInfo
             {
                 Console.WriteLine("ultra fast");
             }
-            else if(speed>1000)
+            else if (speed > 1000)
             {
                 Console.WriteLine("extremely fast");
             }
