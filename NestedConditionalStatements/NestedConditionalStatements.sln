@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.PersonalTitles", "PersonalTitles\01.PersonalTitles.csproj", "{55E5F0C2-6C4B-4A34-8ADA-C343FDDB256E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.PersonalTitles", "01.PersonalTitles\01.PersonalTitles.csproj", "{55E5F0C2-6C4B-4A34-8ADA-C343FDDB256E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.SmallShop", "SmallShop\02.SmallShop.csproj", "{6FDD5594-1C89-402B-98E6-89DF11D9AD37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.SmallShop", "02.SmallShop\02.SmallShop.csproj", "{6FDD5594-1C89-402B-98E6-89DF11D9AD37}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.PointInRectangle", "03.PointInRectangle\03.PointInRectangle.csproj", "{44574CE1-581F-4C3E-8E6B-35366E82E2ED}"
 EndProject
