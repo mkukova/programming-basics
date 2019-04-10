@@ -10,8 +10,9 @@ namespace _08.WorldSwimmingRecord
             double leght = double.Parse(Console.ReadLine());
             double timePerMeter = double.Parse(Console.ReadLine());
             double neededtime = leght * timePerMeter;
-            double bonustime = (leght / 15) * 12.5;
-            double totaltime = Math.Floor(neededtime + bonustime);
+            double delay = Math.Floor(leght / 15.0);
+            double bonustime = delay * 12.5;
+            double totaltime = neededtime + bonustime;
             if (totaltime < worldRecord)
             {
                 Console.WriteLine($"Yes, he succeeded! The new world record is {totaltime:f2} seconds.");
