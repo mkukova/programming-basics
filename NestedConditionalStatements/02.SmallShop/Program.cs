@@ -12,7 +12,7 @@ namespace SmallShop
             double price = 0;
             if(city=="Sofia")
             {
-                if(productName== "coffee")
+                if(productName == "coffee")
                 {
                     price = quantity *0.5;
                     Console.WriteLine(price);
