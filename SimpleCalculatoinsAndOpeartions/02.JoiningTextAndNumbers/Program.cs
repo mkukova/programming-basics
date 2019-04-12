@@ -6,11 +6,11 @@ namespace _02.JoiningTextAndNumbers
     {
         static void Main(string[] args)
         {
-            string firstname = Console.ReadLine();
-            string lastname = Console.ReadLine();
+            string firstName = Console.ReadLine();
+            string lastName = Console.ReadLine();
             string town = Console.ReadLine();
             int years = int.Parse(Console.ReadLine());
-            Console.WriteLine("You are {0} {1}, a {2}-years old person from {3}!", firstname, lastname, years, town);
+            Console.WriteLine("You are {0} {1}, a {2}-years old person from {3}!", firstName, lastName, years, town);
         }
     }
 }
