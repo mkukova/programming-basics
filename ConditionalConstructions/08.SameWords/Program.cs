@@ -10,8 +10,14 @@ namespace _08.SameWords
             string b = Console.ReadLine();
             a = a.ToLower();
             b = b.ToLower();
-            if(a==b) { Console.WriteLine("yes"); }
-            else { Console.WriteLine(" no"); }
+            if (a == b)
+            {
+                Console.WriteLine("yes");
+            }
+            else
+            {
+                Console.WriteLine(" no");
+            }
         }
     }
 }
