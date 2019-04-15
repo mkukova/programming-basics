@@ -19,6 +19,8 @@ namespace PersonalTitles
                     {
                         Console.WriteLine("Mr.");
                     }
+
+                    break;
                 case "f":
                     if (age < 16)
                     {
@@ -28,8 +30,11 @@ namespace PersonalTitles
                     {
                         Console.WriteLine("Ms.");
                     }
+
+                    break;
                 default:
                     Console.WriteLine("Error");
+                    break;
             }
         }
     }
