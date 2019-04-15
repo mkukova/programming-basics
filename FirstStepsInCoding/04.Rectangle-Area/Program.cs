@@ -8,7 +8,8 @@ namespace _04.Rectangle_Area
         {
             double a = double.Parse(Console.ReadLine());
             double b = double.Parse(Console.ReadLine());
-            Console.WriteLine(a * b);
+            double area = a * b;
+            Console.WriteLine(area);
         }
     }
 }
