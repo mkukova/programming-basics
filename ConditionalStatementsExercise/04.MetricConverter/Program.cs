@@ -27,6 +27,7 @@ namespace _04.MetricConverter
             {
                 value = value * 100;
             }
+
             Console.WriteLine($"{value:F3}");
         }
     }
