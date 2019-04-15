@@ -28,6 +28,7 @@ namespace _02.BonusScore
             {
                 bonus = bonus + 2;
             }
+
             Console.WriteLine(bonus);
             Console.WriteLine(number + bonus);
 
