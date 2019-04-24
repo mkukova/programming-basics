@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _01.OldBooks
+namespace _02.ExamPreparation
 {
     class Program
     {
