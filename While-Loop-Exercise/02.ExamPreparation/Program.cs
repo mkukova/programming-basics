@@ -18,7 +18,7 @@ namespace _01.OldBooks
                 string nameOfExercise = Console.ReadLine();
                 if (nameOfExercise == "Enough")
                 {
-                    Console.WriteLine($"Average score: {averageGrade}");
+                    Console.WriteLine($"Average score: {averageGrade:F2}");
                     Console.WriteLine($"Number of problems: {totalProblems}");
                     Console.WriteLine($"Last problem: {lastProblem}");
                     break;
@@ -26,16 +26,16 @@ namespace _01.OldBooks
 
                 int grade = int.Parse(Console.ReadLine());
                 sumGrades += grade;
-                countGoodGrades++;
                 if (grade <= 4.00)
                 {
                     countBadGrades++;
                 }
                 else
                 {
-                    lastProblem = nameOfExercise;
+                    countGoodGrades++;
                 }
 
+                lastProblem = nameOfExercise;
                 totalProblems = countGoodGrades + countBadGrades;
                 averageGrade = sumGrades / totalProblems;
             }
