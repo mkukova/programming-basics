@@ -9,15 +9,16 @@ namespace _06.Cake
             int width = int.Parse(Console.ReadLine());
             int leght = int.Parse(Console.ReadLine());
             int face = width * leght;
+            int f = face;
             int numberPiecesTaken = 0;
             int facePiecesTaken = 0;
             int piecesDiff = 0;
-            while (face > 0)
+            while (face >= 0)
             {
-                string command = Console.ReadLine();
-                if (command == "STOP")
+                string command = Console.ReadLine().ToLower();
+                if (command == "stop")
                 {
-                    piecesDiff = (width * leght) - numberPiecesTaken;
+                    piecesDiff = (f) - numberPiecesTaken;
                     Console.WriteLine($"{piecesDiff} pieces are left.");
                     break;
                 }
@@ -31,7 +32,7 @@ namespace _06.Cake
 
             if (face < 0)
             {
-                piecesDiff = numberPiecesTaken - (width * leght);
+                piecesDiff = numberPiecesTaken - (f);
                 Console.WriteLine($"No more cake left! You need {piecesDiff} pieces more.");
             }
         }
