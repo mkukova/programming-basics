@@ -28,12 +28,8 @@ namespace _08.Moving
                 command = Console.ReadLine();
 
             }
-
-            if (command == "Done")
-            {
+          
                 Console.WriteLine($"{spaceDiff} Cubic meters left.");
-            }
-
         }
     }
 }
