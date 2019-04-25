@@ -23,6 +23,9 @@ namespace _06.Journey
                         Console.WriteLine($"Somewhere in Bulgaria");
                         Console.WriteLine($"Hotel - {spentAmount:F2}");
                         break;
+					default:
+						Console.WriteLine("Invalid season");
+						break;					
                 }
             }
             else if (budget > 100 && budget <= 1000)
@@ -39,15 +42,16 @@ namespace _06.Journey
                         Console.WriteLine($"Somewhere in Balkans");
                         Console.WriteLine($"Hotel - {spentAmount:F2}");
                         break;
+					default:
+						Console.WriteLine("Invalid season");
+						break;
                 }
-
             }
             else
             {
                 spentAmount = 0.9 * budget;
                 Console.WriteLine($"Somewhere in Europe");
                 Console.WriteLine($"Hotel - {spentAmount:F2}");
-
             }
         }
     }
