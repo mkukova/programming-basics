@@ -21,6 +21,7 @@ namespace _04.NumberSequence
                     min = number;
                 }
             }
+
             Console.WriteLine($"Max number: {max}");
             Console.WriteLine($"Min number: {min}");
         }
