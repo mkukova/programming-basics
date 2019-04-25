@@ -31,7 +31,7 @@ namespace _07.GraduationPt._2
                 }
             }
 
-            if (isExcluded == false)
+            if (!isExcluded)
             {
                 double average = sum / 12.0;
                 Console.WriteLine($"{name} graduated. Average grade: {average:f2}");
