@@ -6,7 +6,10 @@ namespace _02.LatinLetters
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            for(char i='a'; i<='z'; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
