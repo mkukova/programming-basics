@@ -33,6 +33,9 @@ namespace _03.Vacation
                         }
 
                         break;
+					default:
+						Console.WriteLine("Invalid action!");
+						break;						
                 }
             }
 
