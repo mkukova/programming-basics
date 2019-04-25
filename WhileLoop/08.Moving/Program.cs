@@ -15,7 +15,6 @@ namespace _08.Moving
             string command = Console.ReadLine();
             while (command != "Done")
             {
-
                 int cartoonSpace = int.Parse(command);
                 totalspace += cartoonSpace;
                 spaceDiff = Math.Abs(totalspace - freeSpace);
@@ -26,7 +25,6 @@ namespace _08.Moving
                 }
 
                 command = Console.ReadLine();
-
             }
           
                 Console.WriteLine($"{spaceDiff} Cubic meters left.");
