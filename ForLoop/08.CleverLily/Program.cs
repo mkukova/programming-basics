@@ -35,7 +35,6 @@ namespace _08.CleverLily
 			money = money + (toyYears * toyPrice);
 			money = money - takenMoney;
 			diff = washingMachinePriece - money;
-
 			if (money >= washingMachinePriece)
 			{
 				Console.WriteLine($"Yes! {Math.Abs(diff):F2}");
