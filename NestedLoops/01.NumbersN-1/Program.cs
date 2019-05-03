@@ -6,7 +6,11 @@ namespace NumbersN_1
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			int n = int.Parse(Console.ReadLine());
+			for (int i = n; i > 0; i--)
+			{
+				Console.WriteLine(i);
+			}
 		}
 	}
 }
