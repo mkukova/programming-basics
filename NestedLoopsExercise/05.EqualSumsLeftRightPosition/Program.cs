@@ -28,6 +28,7 @@ namespace _05.EqualSumsLeftRightPosition
 				if (rightSum == leftSum)
 				{
 					Console.Write($"{i} ");
+					continue;
 				}
 				else
 				{
@@ -43,6 +44,7 @@ namespace _05.EqualSumsLeftRightPosition
 					if (rightSum == leftSum)
 					{
 						Console.Write($"{i} ");
+						continue;
 					}
 				}
 			}
