@@ -20,6 +20,7 @@ namespace _07.TrainTheTrainers
 					finalMark += mark;
 					counter++;
 				}
+
 				Console.WriteLine($"{command} - {(sum / n):F2}.");
 				command = Console.ReadLine();
 			}
