@@ -13,9 +13,9 @@ namespace _02.TripToWorldCup
 			int discountPercent = int.Parse(Console.ReadLine());
 			double totalSum = 6 * numberGames * gameTicketPrice;
 			double totalPriceTickets = 6 * (goTicketPrice + returnTicketPrice);
-			totalSum = totalSum + (totalPriceTickets - ((discountPercent * totalPriceTickets)/100));
+			totalSum = totalSum + (totalPriceTickets - ((discountPercent * totalPriceTickets) / 100));
 			Console.WriteLine($"Total sum: {totalSum:F2} lv.");
-			Console.WriteLine($"Each friend has to pay {(totalSum/6):F2} lv.");
+			Console.WriteLine($"Each friend has to pay {(totalSum / 6):F2} lv.");
 		}
 	}
 }
