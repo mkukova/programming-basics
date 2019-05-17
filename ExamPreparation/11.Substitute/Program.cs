@@ -10,28 +10,31 @@ namespace _11.Substitute
 			int firstNumberSecondDigit = int.Parse(Console.ReadLine());
 			int secondNumberFirstDigit = int.Parse(Console.ReadLine());
 			int secondNumberSecondDigit = int.Parse(Console.ReadLine());
-			int counter = 6;
-			while (counter > 0)
-			{
-				for (int k = firstNumberFirstDigit; k <= 8; k++)
-				{
-					for (int l = 9; l >= firstNumberSecondDigit; l--)
-					{
-						for (int m = secondNumberFirstDigit; m <= 8; m++)
-						{
-							for (int n = 9; n >= secondNumberSecondDigit; n--)
-							{
-								if (firstNumberFirstDigit % 2 == 0 && secondNumberFirstDigit % 2 == 0 && firstNumberSecondDigit % 2 != 0 && secondNumberSecondDigit % 2 != 0)
-								{
+			int counter = 0;
 
-									if (firstNumberFirstDigit == secondNumberFirstDigit && firstNumberSecondDigit == secondNumberSecondDigit)
+			for (int k = firstNumberFirstDigit; k <= 8; k++)
+			{
+				for (int l = 9; l >= firstNumberSecondDigit; l--)
+				{
+					for (int m = secondNumberFirstDigit; m <= 8; m++)
+					{
+						for (int n = 9; n >= secondNumberSecondDigit; n--)
+						{
+							if (k % 2 == 0 && m % 2 == 0 && l % 2 != 0 && n % 2 != 0)
+							{
+
+								if (k == m && l == n)
+								{
+									Console.WriteLine("Cannot change the same player.");
+								}
+								else
+								{
+									Console.WriteLine($"{k}{l} - {m}{n}");
+									counter++;
+
+									if (counter == 6)
 									{
-										Console.WriteLine("Cannot change the same player.");
-									}
-									else
-									{
-										Console.WriteLine($"{firstNumberFirstDigit}{firstNumberSecondDigit} - {secondNumberFirstDigit}{secondNumberSecondDigit}");
-										counter--;
+										return;
 									}
 								}
 							}
@@ -42,3 +45,4 @@ namespace _11.Substitute
 		}
 	}
 }
+
