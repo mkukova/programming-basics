@@ -6,7 +6,30 @@ namespace _05.Bus
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			int passengers = int.Parse(Console.ReadLine());
+			int stops = int.Parse(Console.ReadLine());
+			int counterStops = 0;
+			int totalPassengers = passengers;
+			while (stops > 0)
+			{
+				int landedPassengers = int.Parse(Console.ReadLine());
+				int boardedPassengers = int.Parse(Console.ReadLine());
+				counterStops++;
+
+				if (counterStops % 2 == 0)
+				{
+					landedPassengers += 2;
+				}
+				else
+				{
+					boardedPassengers += 2;
+				}
+
+				totalPassengers = totalPassengers - landedPassengers + boardedPassengers;
+				stops--;
+			}
+
+			Console.WriteLine($"The final number of passengers is : {totalPassengers}");
 		}
 	}
 }
